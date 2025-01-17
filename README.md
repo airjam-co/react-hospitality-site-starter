@@ -66,7 +66,7 @@ If you're not familiar with how to work with `.env` files, [refer to following g
 ## Learn more
 To learn more about specific technology used for this template, check out following resources:
 
-* [How to create new Appointment component with AirJam]()
+* [How to create new Appointment component with AirJam](https://airjam.co/appointment/how)
 * [Next.js Documentation](https://nextjs.org/docs)
 * [Tailwind Documentation](https://tailwindui.com/documentation)
 
