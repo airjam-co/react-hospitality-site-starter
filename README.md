@@ -41,8 +41,10 @@ npm run build
 ```
 Then, to run:
 ```
+mv .env.example .env
 npm run dev
 ```
+
 
 ### In detail
 
@@ -58,7 +60,7 @@ The, sign up to [AirJam](https://airjam.co/) and create a new Appointment compon
 
 Once you are all configured with Stripe and AirJam, have Stripe's secret and publishable keys, and have an ID for your AirJam's Appointment component, then you can add those values to the .env files to configure your account to the template. Open `.env` file and change `VITE_AIRJAM_APPOINTMENT_ID` and `VITE_STRIPE_PUBLISHABLE_CLIENT_KEY` to your Appointment component ID and Stripe's publishable key, respectively, then goto your AirJam's Appointment component, choose Stripe as the payment processor, then past Stripe's secret key to the text box below the dropdown to wire your AirJam account with your Stripe account.
 
-If you're not familiar with how to productionize your project with `.env` files, [refer to following guide](https://vite.dev/guide/env-and-mode#env-files) on how to work with `env` files in different environments.
+If you're not familiar with how to work with `.env` files, [refer to following guide](https://vite.dev/guide/env-and-mode#env-files) on how to work with `env` files in different environments. In production, it's highly recommended that you use [environment variables](https://vite.dev/guide/env-and-mode#env-variables) instead of `.env` files.
 
 
 ## Learn more
