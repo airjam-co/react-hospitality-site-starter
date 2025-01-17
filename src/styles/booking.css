@@ -1,0 +1,160 @@
+.airjam-calendar-view .react-calendar {
+    border: none;
+    width: 100%;
+    min-width: 350px;
+    margin-bottom: 20px;
+}
+
+.airjam-calendar-view .react-calendar__month-view__weekdays {
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.airjam-calendar-view .react-calendar__tile--active {
+    background-color: #13715b;
+    font-weight: 600;
+}
+
+.airjam-calendar-view .react-calendar__tile--active:enabled:hover,
+.airjam-calendar-view .react-calendar__tile--active:enabled:focus {
+    background-color: #21836c;
+}
+
+.airjam-calendar-view .react-calendar__tile--active {
+    background: #145042;
+    color: white;
+}
+
+.airjam-calendar-view .react-calendar__tile--hasActive {
+    background-color: #519888;
+}
+
+.airjam-calendar-view .react-calendar__tile--now {
+    background-color: rgb(199, 234, 130);
+}
+
+.airjam-calendar-view button,
+.airjam-calendar-view input,
+.airjam-calendar-view optgroup,
+.airjam-calendar-view select,
+.airjam-calendar-view textarea {
+    font-size: 14px;
+}
+
+.airjam-calendar-view .btn-primary {
+    background-color: aliceblue;
+    border: 1px solid #145042;
+    width: 100%;
+    margin-bottom: 5px;
+    color: #145042;
+}
+
+.airjam-calendar-view .btn-primary.reserve-slot-button {
+    background-color: #145042;
+    font-weight: bold;
+    color: white;
+}
+
+.airjam-calendar-view .btn-primary.reserve-slot-button:hover {
+    background-color: #0c3028;
+}
+
+.airjam-calendar-view .btn-primary:active {
+    background-color: #145042;
+    border: none;
+}
+
+.airjam-calendar-view .btn:disabled,
+.airjam-calendar-view .btn:disabled.reserve-slot-button,
+.airjam-calendar-view .btn:disabled.reserve-slot-button:hover {
+    background-color: rgb(245, 245, 245);
+    color: #494e4d;
+    font-weight: normal;
+    border: 1px solid #9a9a9a;
+}
+
+.airjam-calendar-view .calendar-view-container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.airjam-calendar-view .timezone-selector-block {
+    display: none;
+}
+
+.airjam-calendar-view .room-detail ul {
+    padding-left: 16px;
+    list-style: initial;
+}
+
+.airjam-calendar-view .calendar-view-container .availabilities .empty {
+    display: block;
+    position: relative;
+    visibility: hidden;
+}
+
+.airjam-calendar-view .calendar-view-container .availabilities .empty::after {
+    content: "Please select the start and end dates to check the availability of rooms for your selected dates";
+    font-family: "Gelasio", serif;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    visibility: visible;
+    font-size: 14px;
+    color: #666666;
+}
+
+@media (min-width: 1024px) {
+    .airjam-calendar-view .calendar-view-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .airjam-calendar-view .timezone-selector-block {
+        grid-column: span 2 / span 2;
+    }
+}
+
+.modal-dialog .modal-content {
+    border: 0.2em solid #145042;
+}
+
+.modal-header .modal-title.h4 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.modal-body h3 {
+    font-size: 18px;
+    color: #145042;
+}
+
+.modal-body .payment-total {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.modal-body svg {
+    display: initial;
+}
+
+.modal-body .mb-3 {
+    margin-bottom: 10px !important;
+}
+
+.modal-body .submit-container button {
+    background-color: #145042;
+    border-color: #145042;
+}
+
+.modal-body .submit-container button:active,
+.modal-body .submit-container button:hover {
+    background-color: #0c3028;
+    border-color: #0c3028;
+}
